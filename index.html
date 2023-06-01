@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <section>
+            <h1 id="header">TIC TAC GAME</h1>
+        </section>
+        <section id="Game-info-container">
+            <span class="game-info-text">To start Game Tap on any Box</span>
+            <span class="game-info-player">player 1 will be X</span> &nbsp;&&nbsp;
+            <span class="game-info-player">player 2 as O
+            </span>
+        </section>
+        <section class="three-box">
+            <input type="text" maxlength="1" id="box-1" class="single-box" onclick="myfunc('1'); func()"></input>
+            <input type="text" maxlength="1" id="box-2" class="single-box" onclick="myfunc('2'); func()"></input>
+            <input type="text" maxlength="1" id="box-3" class="single-box" onclick="myfunc('3'); func()"></input>
+        </section>
+        <section class="three-box">
+            <input type="text" maxlength="1" id="box-4" class="single-box" onclick="myfunc('4'); func();"></input>
+            <input type="text" maxlength="1" id="box-5" class="single-box" onclick="myfunc('5'); func();"></input>
+            <input type="text" maxlength="1" id="box-6" class="single-box" onclick="myfunc('6'); func();"></input>
+        </section>
+        <section class="three-box">
+            <input type="text" maxlength="1" id="box-7" class="single-box" onclick="myfunc('7'); func();"></input>
+            <input type="text" maxlength="1" id="box-8" class="single-box" onclick="myfunc('8'); func();"></input>
+            <input type="text" maxlength="1" id="box-9" class="single-box" onclick="myfunc('9'); func();"></input>
+        </section>
+        <section id="footer">
+            <button id="btn" onclick="reset()">Game Restart</button>
+        </section>
+        <p id="display-player"> &gt; &gt; WELCOME TO THE GAME &lt; &lt;</p>
+        <h2 id="winner"></h2>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

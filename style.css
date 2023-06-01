@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(236, 222, 239);
+}.single-box{
+    width: 60px;
+    height: 65px;
+    margin: 1px;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(226, 159, 4);
+    border-radius: 5px;
+    /* border: 1px solid rgb(218, 111, 12); */
+    border: 1px solid rgb(186, 184, 184);
+    background: rgb(248, 243, 248);
+    border: none;
+    padding: 6px;
+}
+
+.three-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+    /* background-color: rgb(230, 201, 234); */ 
+    background-color: rgb(201, 213, 224);
+   /* background-color: rgb(233, 215, 226); */
+}
+
+#header{
+    font-size: x-large;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 2px;
+    padding: 8px;
+    color: rgb(246, 4, 12);
+    background-color: rgb(243, 200, 232);
+}
+
+#footer{
+    text-align: center;
+    padding-bottom: 4px;
+    margin-top: 2px;
+    background-color: rgb(245, 201, 201);
+    background-color: rgb(235, 191, 235);
+
+}
+
+#btn{
+    margin-top: 6px;
+    font-size: medium;
+    border-radius: 5px;
+    padding: 3px 15px 4px 15px;
+    color:white;
+    background-color: rgb(4, 187, 34);
+    /* background-color: rgb(251, 149, 46); */
+    border-color: rgb(246, 237, 109);
+}
+
+#Game-info-container{
+    /* background-color: rgb(200, 200, 220); */
+    background-color: rgb(201, 223, 227);
+    text-align: center;
+    color: rgb(121, 0, 186);
+    font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 2px;
+}
+
+.game-info-player{
+    color: rgb(0, 116, 31);
+}
+
+#display-player{
+    /* background-color: red; */
+    text-align: center;
+    color: rgb(0, 151, 232);
+}
+
+#winner{
+    color: rgb(217, 109, 2);
+    text-align: center;
+    padding: 0.5px;
+    background-color: rgb(144, 211, 216);
+}
