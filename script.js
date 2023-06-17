@@ -63,22 +63,22 @@ function func() {
     Disable_other_Boxes_for_O([4, 5, 6], [1, 2, 3, 7, 8, 9])
 
   } else if (
-    (b1 == "X" || b1 == "0") && 
+    (b1 == "X" || b1 == "0") &&
     (b2 == "X" || b2 == "0") &&
-    (b3 == "X" || b3 == "0") && 
+    (b3 == "X" || b3 == "0") &&
     (b4 == "X" || b4 == "0") &&
-    (b5 == "X" || b5 == "0") && 
+    (b5 == "X" || b5 == "0") &&
     (b6 == "X" || b6 == "0") &&
-    (b7 == "X" || b7 == "0") && 
+    (b7 == "X" || b7 == "0") &&
     (b8 == "X" || b8 == "0") &&
     (b9 == "X" || b9 == "0")
   ) {
     document.getElementById("winner").innerHTML = " Unfortunately Match Tie ";
-    window.alert("Match Tie");
+    // window.alert("Match Tie");
 
   } else {
     document.getElementById("display-player").innerHTML =
-      flag === 1 ? "Player X Turn" : "Player 0 Turn";
+      flag === 1 ? "player X Turn" : "Player O Turn";
   }
 }
 
@@ -94,8 +94,8 @@ function Disable_other_Boxes_for_X(num1, num2) {
   for (i of num1) {
     document.getElementById(`box-${i}`).style.backgroundColor = "green";
   }
-  window.alert(" X Player won");
-  document.getElementById('display-player').innerHTML = "Congratulations to Player X"
+  // window.alert(" X Player won");
+  document.getElementById('display-player').innerHTML = "Congratulations player X"
 }
 
 
@@ -109,14 +109,14 @@ function Disable_other_Boxes_for_O(num1, num2) {
   for (i of num1) {
     document.getElementById(`box-${i}`).style.backgroundColor = "green";
   }
-  window.alert(" O Player won");
-  document.getElementById('display-player').innerHTML = "Congratulations to Player O"
+  // window.alert(" O Player won");
+  document.getElementById('display-player').innerHTML = "Congratulations Player 0"
 }
 
 
 // common function for all functions 
 let flag = 1
-function myfunc(box_num){
+function myfunc(box_num) {
   if (flag == 1) {
     document.getElementById(`box-${box_num}`).value = "X";
     document.getElementById(`box-${box_num}`).disabled = true;
